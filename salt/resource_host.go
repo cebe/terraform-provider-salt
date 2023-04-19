@@ -27,10 +27,9 @@ func resourceHost() *schema.Resource {
 				Type:     schema.TypeString,
 				Required: true,
 			},
-			// Is this really required?
 			"passwd": {
 				Type:     schema.TypeString,
-				Required: true,
+				Optional: true,
 			},
 			// Optional parameters
 			"port": {
